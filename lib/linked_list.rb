@@ -98,7 +98,7 @@ class LinkedList
     return nil if @head.nil?
 
     node = @head
-    result = ''
+    result = "( #{node.value} ) -> "
     until  node.next_node.nil?
       result += "( #{node.value} ) -> "
       node = node.next_node
